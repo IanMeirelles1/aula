@@ -10,31 +10,31 @@ def main():
         print("Voos disponíveis: AS7012, QX2002, AS2002, 8E880, 8E890")
         voo = input("Qual voo a ser consultado: ")
         if voo == "AS7012":
-            resp = sis(x1)
+            resp, x = sis(x1)
             if resp == "Sim":
                 continue
             else:
                 break
         elif voo == "QX2002":
-            resp = sis(x2)
+            resp, x = sis(x2)
             if resp == "Sim":
                 continue
             else:
                 break
         elif voo == "AS2002":
-            resp, x3 = sis(x3)
+            resp, x = sis(x3)
             if resp == "Sim":
                 continue
             else:
                 break
         elif voo == "8E880":
-            resp, x4 = sis(x4)
+            resp, x = sis(x4)
             if resp == "Sim":
                 continue
             else:
                 break
         elif voo == "8E890":
-            resp, x5 = sis(x5)
+            resp, x = sis(x5)
             if resp == "Sim":
                 continue
             else:
