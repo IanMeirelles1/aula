@@ -6,4 +6,4 @@ voos = {
     "8E890": [2, 3, 5]
 }
 for x, y in voos.items():
-        print(y["AS7012"])
+        print(y[])
