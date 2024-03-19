@@ -5,8 +5,8 @@ voos = {
     "8E880": [2, 3, 5],
     "8E890": [2, 3, 5]
 }
-voo= [[2,3,5],[2,3,5]]
-voo_label = ["AS7012","QX2002"]
+
+
 def main():
     for x, y in voos.items():
         while True:
