@@ -3,5 +3,5 @@ voos = {
     "voo2": [20, 10, 40]
 }
 for x, y in voos.items():
-    print(y)
+    print(1, y)
 
