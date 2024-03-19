@@ -14,7 +14,7 @@ def main():
             if voo == "AS7012":
 
 
-def sis(a):
-    print(f"Este voo possui {a} passagens")
+def sis(a, b, c):
+    print(f"Este voo possui {a} passagens)
     quant = int(input("Quantidade de passagens: "))
     a -= quant
