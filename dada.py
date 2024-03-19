@@ -7,7 +7,7 @@ voos = {
 }
 
 for x, y in voos.items():
-    for i in y:
-        print(y[0])
+    print(y[0])
+
 
 
