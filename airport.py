@@ -1,7 +1,7 @@
-x1 = 10
-x2 = 10
-x3 = 10
-x4 = 10
+x1 = 18
+x2 = 12
+x3 = 13
+x4 = 14
 x5 = 10
 
 
@@ -46,6 +46,7 @@ def main():
 def sis(x):
     print(f"Este voo possui {x} passagens")
     quant = int(input("Quantidade de passagens: "))
+    print(x)
     x -= quant
     if x < 0:
         print("Passagens insuficientes")
