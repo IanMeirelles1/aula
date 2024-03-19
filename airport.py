@@ -9,6 +9,15 @@ def main():
         voo = input("Qual voo a ser consultado: ")
         if voo == "AS7012":
             sis(x1)
+        elif voo == "QX2002":
+            sis(x2)
+        elif voo == "AS2002":
+            sis(x3)
+        elif voo == "8E880":
+            sis(x4)
+        elif voo == "8E890":
+            sis(x5)
+            
 def sis(x):
     print(f"Este voo possui {x} passagens")
         quant = int(input("Quantidade de passagens: "))
