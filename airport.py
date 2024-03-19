@@ -15,7 +15,7 @@ avião = [
 while True:
     print("Voos disponíveis: AS7012, QX2002, AS2002, 8E880, 8E890")
     voo = input("Qual voo a ser consultado: ")
-    
+
     if voo == "AS7012":
         print(f"Este voo possui {x1} passagens")
         quant = int(input("Quantidade de passagens: "))
@@ -45,8 +45,8 @@ while True:
             x2 += quant
         else:
             if x2 <= 5:
-                valor = (quant * 100) + (quant * 100) * 0.20
-                print(f"O valor a ser pago é de R${valor}")
+                valor = (quant * 100) + (quant * 100) *valo 0.20
+                print(f"O valor a ser pago é de R${r}")
             else:
                 valor = quant * 100
                 print(f"O valor a ser pago é de R${valor}")
@@ -55,7 +55,7 @@ while True:
                 continue
             else:
                 break
-            
+
     elif voo == "AS2002":
         print(f"Este voo possui {x3} passagens")
         quant = int(input("Quantidade de passagens: "))
@@ -75,7 +75,7 @@ while True:
                 continue
             else:
                 break
-            
+
     elif voo == "8E880":
         print(f"Este voo possui {x4} passagens")
         quant = int(input("Quantidade de passagens: "))
@@ -95,7 +95,7 @@ while True:
                 continue
             else:
                 break
-            
+
     elif voo == "8E890":
         print(f"Este voo possui {x5} passagens")
         quant = int(input("Quantidade de passagens: "))
@@ -115,7 +115,7 @@ while True:
                 continue
             else:
                 break
-            
+
     else:
         print("Voo inválido")
-        
+
