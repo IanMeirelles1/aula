@@ -22,19 +22,19 @@ def main():
             else:
                 break
         elif voo == "AS2002":
-            resp = sis(x3)
+            resp, x3 = sis(x3)
             if resp == "Sim":
                 continue
             else:
                 break
         elif voo == "8E880":
-            resp = sis(x4)
+            resp, x4 = sis(x4)
             if resp == "Sim":
                 continue
             else:
                 break
         elif voo == "8E890":
-            resp = sis(x5)
+            resp, x5 = sis(x5)
             if resp == "Sim":
                 continue
             else:
@@ -59,7 +59,7 @@ def sis(x):
             valor = quant * 100
             print(f"O valor a ser pago é de R${valor}")
         cont = input("Quer continuar sua compra? ")
-        return cont
+        return cont, x
 
 
 
