@@ -7,7 +7,6 @@ def main():
 def ian(a, b):
     if a == "1":
         print("tt")
-        b = b.upper
         print(b)
 main()
 
