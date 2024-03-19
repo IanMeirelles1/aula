@@ -15,6 +15,6 @@ def main():
 
 
 def sis(a, b, c):
-    print(f"Este voo possui {a} passagens)
+    print(f"Este voo possui {a} passagens de executiva, {b} passagens confort )
     quant = int(input("Quantidade de passagens: "))
     a -= quant
