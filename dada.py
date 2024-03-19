@@ -8,6 +8,7 @@ voos = {
 
 for x, y in voos.items():
     print(y[0])
+    break
 
 
 
