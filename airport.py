@@ -27,7 +27,7 @@ def main():
             else:
                 break
 
-def sis(x, y):
+def sis(x):
     print(f"Este voo possui {x} passagens")
         quant = int(input("Quantidade de passagens: "))
         x -= quant
