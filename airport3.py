@@ -5,8 +5,16 @@ voos = {
     "8E880": [2, 3, 5],
     "8E890": [2, 3, 5]
 }
-for x, y in voos.items():
-    while True:
-        print("Voos disponíveis: AS7012, QX2002, AS2002, 8E880, 8E890")
-        voo = input("Qual voo a ser consultado: ")
+def main():
+    for x, y in voos.items():
+        print(x[2])
+        while True:
+            print("Voos disponíveis: AS7012, QX2002, AS2002, 8E880, 8E890")
+            voo = input("Qual voo a ser consultado: ")
+            if voo == "AS7012":
 
+
+def sis(a):
+    print(f"Este voo possui {a} passagens")
+    quant = int(input("Quantidade de passagens: "))
+    a -= quant

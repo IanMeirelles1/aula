@@ -46,7 +46,6 @@ def main():
 def sis(x):
     print(f"Este voo possui {x} passagens")
     quant = int(input("Quantidade de passagens: "))
-    print(x)
     x -= quant
     if x < 0:
         print("Passagens insuficientes")
