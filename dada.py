@@ -6,7 +6,7 @@ voos = {
     "8E890": [2, 3, 5]
 }
 
-for x, y in voos.items():
+for x in voos.values():
     print(x[2])
 
 
