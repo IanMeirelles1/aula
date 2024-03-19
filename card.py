@@ -1,6 +1,6 @@
 x = [1, 2, 3]
-maior = 0
+maior = x[0]
 for i in x:
-    if i :
+    if i > :
         maior = i
 print(maior)
