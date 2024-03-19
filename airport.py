@@ -11,14 +11,34 @@ def main():
         voo = input("Qual voo a ser consultado: ")
         if voo == "AS7012":
             sis(x1)
+            if cont == "Sim":
+                continue
+            else:
+                break
         elif voo == "QX2002":
             sis(x2)
+            if cont == "Sim":
+                continue
+            else:
+                break
         elif voo == "AS2002":
             sis(x3)
+            if cont == "Sim":
+                continue
+            else:
+                break
         elif voo == "8E880":
             sis(x4)
+            if cont == "Sim":
+                continue
+            else:
+                break
         elif voo == "8E890":
             sis(x5)
+            if cont == "Sim":
+                continue
+            else:
+                break
         else:
             print("Voo inválido")
 
@@ -38,10 +58,7 @@ def sis(x):
             valor = quant * 100
             print(f"O valor a ser pago é de R${valor}")
         cont = input("Quer continuar sua compra? ")
-        if cont == "Sim":
-            continue
-        else:
-            break
+        return cont
 
 
 main()
