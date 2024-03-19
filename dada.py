@@ -6,8 +6,9 @@ voos = {
     "8E890": [2, 3, 5]
 }
 
-for x, y in voos.items():
-    print(y[0])
+
+
+print(voos["AS7012"][2] -= 1)
 
 
 
