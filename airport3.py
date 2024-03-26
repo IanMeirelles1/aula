@@ -5,13 +5,13 @@ voos = {
     "8E880": [2, 3, 5],
     "8E890": [2, 3, 5]
 }
-valorf1, valorf2, valorf3, valorf4, valorf5 = 0, 0, 0, 0, 0
-valor1, valor2, valor3 = 0, 0, 0
+
 
 def main():
         while True:
             print("Voos disponíveis: AS7012, QX2002, AS2002, 8E880, 8E890")
             voo = input("Qual voo a ser consultado: ")
+            valor1, valor2, valor3, valor4, valor5 = 0, 0, 0, 0, 0
 
             if voo == "AS7012":
                 valor1 = sis(voos["AS7012"][0], voos["AS7012"][1], voos["AS7012"][2], "AS7012")
@@ -33,6 +33,7 @@ def main():
                 continue
             elif perg == "Não":
                 break
+
         valorf = valor1 + valor2 + valor3 + valor4 + valor5
         print(f"O valor total da sua compra foi de ${valorf:.2f}")
 
