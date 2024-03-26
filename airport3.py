@@ -13,20 +13,25 @@ def main():
             valor1, valor2, valor3 = 0, 0, 0
             if voo == "AS7012":
                 valor1, valor2, valor3 = sis(voos["AS7012"][0], voos["AS7012"][1], voos["AS7012"][2], "AS7012")
+                valorf1 = valor1 + valor2 + valor3
             elif voo == "QX2002":
                 valor1, valor2, valor3 = sis(voos["QX2002"][0], voos["QX2002"][1], voos["QX2002"][2], "QX2002")
+                valorf2 = valor1 + valor2 + valor3
             elif voo == "AS2002":
                 valor1, valor2, valor3 = sis(voos["AS2002"][0], voos["AS2002"][1], voos["AS2002"][2], "AS2002")
+                valorf3 = valor1 + valor2 + valor3
             elif voo == "8E880":
                 valor1, valor2, valor3 = sis(voos["8E880"][0], voos["8E880"][1], voos["8E880"][2], "8E880")
+                valorf4 = valor1 + valor2 + valor3
             elif voo == "8E890":
                 valor1, valor2, valor3 = sis(voos["8E890"][0], voos["8E890"][1], voos["8E890"][2], "8E890")
+                valorf5 = valor1 + valor2 + valor3
             perg = input("Deseja continuar a compra: ")
             if perg == "Sim":
                 continue
             elif perg == "Não":
                 break
-        valorf = valor1 + valor2 + valor3
+        valorf = valorf1 + valorf2 + valorf3 + valorf4 + valorf5
         print(f"O valor total da sua compra foi de ${valorf:.2f}")
 
 
