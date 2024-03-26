@@ -8,7 +8,6 @@ voos = {
 
 
 def main():
-    for x, y in voos.items():
         while True:
             print("Voos disponíveis: AS7012, QX2002, AS2002, 8E880, 8E890")
             voo = input("Qual voo a ser consultado: ")
