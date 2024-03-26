@@ -26,13 +26,14 @@ def main():
             elif perg == "Não":
                 break
         valorf = valor1 + valor2 + valor3
-        print(valorf)
+        print(f"O valor total da sua compra foi de ${valorf}")
 
 
 
 def sis(a, b, c, d):
     print(f"Este voo possui {a} passagens de executiva, {b} passagens confort e {c} passagens econômicas")
     opt = input("Qual opção de passagem você deseja: ")
+    valor1, valor2, valor3 = 0, 0, 0
     if opt == "1":
         quant = quantidade(voos[d][0])
         valor1 = quant * 500
