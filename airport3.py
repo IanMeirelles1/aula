@@ -14,26 +14,26 @@ def main():
             voo = input("Qual voo a ser consultado: ")
 
             if voo == "AS7012":
-                valor = sis(voos["AS7012"][0], voos["AS7012"][1], voos["AS7012"][2], "AS7012")
+                valor1 = sis(voos["AS7012"][0], voos["AS7012"][1], voos["AS7012"][2], "AS7012")
 
             elif voo == "QX2002":
-                valor = sis(voos["QX2002"][0], voos["QX2002"][1], voos["QX2002"][2], "QX2002")
+                valor2 = sis(voos["QX2002"][0], voos["QX2002"][1], voos["QX2002"][2], "QX2002")
 
             elif voo == "AS2002":
-                valor = sis(voos["AS2002"][0], voos["AS2002"][1], voos["AS2002"][2], "AS2002")
+                valor3 = sis(voos["AS2002"][0], voos["AS2002"][1], voos["AS2002"][2], "AS2002")
 
             elif voo == "8E880":
-                valor = sis(voos["8E880"][0], voos["8E880"][1], voos["8E880"][2], "8E880")
+                valor4 = sis(voos["8E880"][0], voos["8E880"][1], voos["8E880"][2], "8E880")
 
             elif voo == "8E890":
-                valor = sis(voos["8E890"][0], voos["8E890"][1], voos["8E890"][2], "8E890")
-                
+                valor5 = sis(voos["8E890"][0], voos["8E890"][1], voos["8E890"][2], "8E890")
+
             perg = input("Deseja continuar a compra: ")
             if perg == "Sim":
                 continue
             elif perg == "Não":
                 break
-        valorf = valorf1 + valorf2 + valorf3 + valorf4 + valorf5
+        valorf = valor1 + valor2 + valor3 + valor4 + valor5
         print(f"O valor total da sua compra foi de ${valorf:.2f}")
 
 
