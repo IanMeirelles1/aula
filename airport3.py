@@ -17,10 +17,15 @@ def main():
 def sis(a, b, c, v):
     print(f"Este voo possui {a} passagens de executiva, {b} passagens confort e {c} passagens econômicas")
     opt = input("Qual opção de passagem você deseja: ")
-    if v[]
     if opt == "1":
+        quant = int(input("Quantidade de passagens: "))
+        a -= quant
 
 
 
+def quantidade(z):
     quant = int(input("Quantidade de passagens: "))
-    a -= quant
+    if quant > z:
+          print("Quantidade de passagens indisponíveis")
+    else:
+        

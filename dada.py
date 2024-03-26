@@ -7,7 +7,7 @@ voos = {
 }
 
 
-
+print(f"eu sou o {voos["AS7012"][0]}")
 print(voos["AS7012"][2] -= 1)
 
 
