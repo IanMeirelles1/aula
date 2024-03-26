@@ -14,20 +14,20 @@ def main():
             voo = input("Qual voo a ser consultado: ")
 
             if voo == "AS7012":
-                valor1, valor2, valor3 = sis(voos["AS7012"][0], voos["AS7012"][1], voos["AS7012"][2], "AS7012")
-                valorf1 += valor1 + valor2 + valor3
+                valor = sis(voos["AS7012"][0], voos["AS7012"][1], voos["AS7012"][2], "AS7012")
+
             elif voo == "QX2002":
-                valor1, valor2, valor3 = sis(voos["QX2002"][0], voos["QX2002"][1], voos["QX2002"][2], "QX2002")
-                valorf2 += valor1 + valor2 + valor3
+                valor = sis(voos["QX2002"][0], voos["QX2002"][1], voos["QX2002"][2], "QX2002")
+
             elif voo == "AS2002":
-                valor1, valor2, valor3 = sis(voos["AS2002"][0], voos["AS2002"][1], voos["AS2002"][2], "AS2002")
-                valorf3 += valor1 + valor2 + valor3
+                valor = sis(voos["AS2002"][0], voos["AS2002"][1], voos["AS2002"][2], "AS2002")
+
             elif voo == "8E880":
-                valor1, valor2, valor3 = sis(voos["8E880"][0], voos["8E880"][1], voos["8E880"][2], "8E880")
-                valorf4 += valor1 + valor2 + valor3
+                valor = sis(voos["8E880"][0], voos["8E880"][1], voos["8E880"][2], "8E880")
+
             elif voo == "8E890":
-                valor1, valor2, valor3 = sis(voos["8E890"][0], voos["8E890"][1], voos["8E890"][2], "8E890")
-                valorf5 += valor1 + valor2 + valor3
+                valor = sis(voos["8E890"][0], voos["8E890"][1], voos["8E890"][2], "8E890")
+                
             perg = input("Deseja continuar a compra: ")
             if perg == "Sim":
                 continue
@@ -41,20 +41,20 @@ def main():
 def sis(a, b, c, d):
     print(f"Este voo possui {a} passagens de executiva, {b} passagens confort e {c} passagens econômicas")
     opt = input("Qual opção de passagem você deseja: ")
-    
+
     if opt == "1":
         quant, voos[d][0] = quantidade(voos[d][0])
         valor1 = quant * 500
-
+        return valor1
     elif opt == "2":
         quant, voos[d][1] = quantidade(voos[d][1])
         valor2 = quant * 350
-
+        return valor2
     elif opt == "3":
         quant, voos[d][2] = quantidade(voos[d][2])
         valor3 = quant * 100
+        return valor3
 
-    return valor1, valor2, valor3
 
 
 
