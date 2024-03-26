@@ -21,10 +21,13 @@ def sis(a, b, c, d):
     opt = input("Qual opção de passagem você deseja: ")
     if opt == "1":
         quantidade(voos[d][0])
+
     elif opt == "2":
         quantidade(voos[d][1])
+
     elif opt == "3":
         quantidade(voos[d][2])
+
 
 
 
@@ -32,7 +35,14 @@ def sis(a, b, c, d):
 def quantidade(z):
     quant = int(input("Quantidade de passagens: "))
     if quant > z:
-          print("Quantidade de passagens indisponíveis")
+        print("Quantidade de passagens indisponíveis")
     else:
         z -= quant
+        
+
+
+
+def valor():
+
+
 
