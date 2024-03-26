@@ -7,6 +7,7 @@ voos = {
 }
 
 
+
 def main():
         valor1, valor2, valor3, valor4, valor5 = 0, 0, 0, 0, 0
         while True:
@@ -55,7 +56,6 @@ def sis(a, b, c, d):
         quant, voos[d][2] = quantidade(voos[d][2])
         valor3 = quant * 100
         return valor3
-
 
 
 
