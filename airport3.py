@@ -5,12 +5,12 @@ voos = {
     "8E880": [2, 3, 5],
     "8E890": [2, 3, 5]
 }
-valor1, valor2, valor3 = 0, 0, 0
 
 def main():
         while True:
             print("Voos disponíveis: AS7012, QX2002, AS2002, 8E880, 8E890")
             voo = input("Qual voo a ser consultado: ")
+            valor1, valor2, valor3 = 0, 0, 0
             if voo == "AS7012":
                 valor1, valor2, valor3 = sis(voos["AS7012"][0], voos["AS7012"][1], voos["AS7012"][2], "AS7012")
             elif voo == "QX2002":
@@ -37,15 +37,16 @@ def sis(a, b, c, d):
     valor1, valor2, valor3 = 0, 0, 0
     if opt == "1":
         quant, voos[d][0] = quantidade(voos[d][0])
-        valor1 =+ quant * 500
+        valor1 = quant * 500
 
     elif opt == "2":
         quant, voos[d][1] = quantidade(voos[d][1])
-        valor2 =+ quant * 350
+        valor2 = quant * 350
 
     elif opt == "3":
         quant, voos[d][2] = quantidade(voos[d][2])
-        valor3 =+ quant * 100
+        valor3 = quant * 100
+
     return valor1, valor2, valor3
 
 
