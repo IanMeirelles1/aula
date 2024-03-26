@@ -27,7 +27,7 @@ def main():
             elif perg == "Não":
                 break
         valorf = valor1 + valor2 + valor3
-        print(f"O valor total da sua compra foi de ${valorf}")
+        print(f"O valor total da sua compra foi de ${valorf:.2f}")
 
 
 
