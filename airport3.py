@@ -14,12 +14,12 @@ def main():
             if voo == "AS7012":
 
 
-def sis(a, b, c, v):
+def sis(a, b, c, d):
     print(f"Este voo possui {a} passagens de executiva, {b} passagens confort e {c} passagens econômicas")
     opt = input("Qual opção de passagem você deseja: ")
     if opt == "1":
-        quant = int(input("Quantidade de passagens: "))
-        a -= quant
+        quantidade(voos[d][0])
+
 
 
 
@@ -28,4 +28,4 @@ def quantidade(z):
     if quant > z:
           print("Quantidade de passagens indisponíveis")
     else:
-        
+        z -= quant
