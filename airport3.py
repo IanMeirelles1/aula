@@ -36,15 +36,15 @@ def sis(a, b, c, d):
     valor1, valor2, valor3 = 0, 0, 0
     if opt == "1":
         quant, voos[d][0] = quantidade(voos[d][0])
-        valor1 = quant * 500
+        valor1 =+ quant * 500
 
     elif opt == "2":
         quant, voos[d][1] = quantidade(voos[d][1])
-        valor2 = quant * 350
+        valor2 =+ quant * 350
 
     elif opt == "3":
         quant, voos[d][2] = quantidade(voos[d][2])
-        valor3 = quant * 100
+        valor3 =+ quant * 100
     return valor1, valor2, valor3
 
 
