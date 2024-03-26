@@ -6,7 +6,6 @@ voos = {
     "8E890": [2, 3, 5]
 }
 
-
 def main():
         while True:
             print("Voos disponíveis: AS7012, QX2002, AS2002, 8E880, 8E890")
@@ -28,6 +27,8 @@ def main():
                 break
         valorf = valor1 + valor2 + valor3
         print(valorf)
+
+
 
 def sis(a, b, c, d):
     print(f"Este voo possui {a} passagens de executiva, {b} passagens confort e {c} passagens econômicas")
@@ -54,6 +55,10 @@ def quantidade(z):
     else:
         z -= quant
     return quant
+
+
+
+main()
 
 
 
